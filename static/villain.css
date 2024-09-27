@@ -1,8 +1,8 @@
 /* General Styles */
 body {
   font-family: 'Poppins', sans-serif;
-  margin: 0px auto;
-  background-color: #eff3f7;
+  margin: 0;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
   color: #3c3c3c;
 }
 
@@ -10,13 +10,15 @@ body {
 .header {
   vertical-align: middle;
   height: auto;
-  margin: 0px auto;
   padding: 20px 10px;
-  background-color: #1d1f33;
+  background: linear-gradient(90deg, #5f67ea, #ff6ec4);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .header-right a {
@@ -25,18 +27,18 @@ body {
   text-decoration: none;
   font-size: 14px;
   line-height: 25px;
-  background-color: #5f67ea;
+  background-color: #454cde;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   border-radius: 30px;
   margin-right: 20px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .header-right a:hover {
-  background-color: #454cde;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: #3d41c2;
+  box-shadow: 0 4px 15px rgba(93, 112, 240, 0.5);
 }
 
 .header img {
@@ -48,10 +50,11 @@ body {
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
   color: #f5f5f5;
+  letter-spacing: 1px;
 }
 
 .header-right a.active {
-  background-color: #f75854;
+  background-color: #ff6ec4;
   color: white;
 }
 
@@ -61,19 +64,21 @@ body {
   flex-wrap: wrap;
   padding-top: 2em;
   justify-content: center;
+  gap: 20px;
 }
 
 .card {
   width: 350px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 20px;
   margin: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .card:hover {
   transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
 }
 
 .card-image {
@@ -84,7 +89,7 @@ body {
 
 .card-name {
   color: #fff;
-  background-color: #3b3b3b;
+  background: linear-gradient(45deg, #ff6ec4, #5f67ea);
   padding: 15px;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
@@ -111,7 +116,6 @@ body {
   font-size: 14px;
   font-weight: 500;
   color: #3b3b3b;
-  font-family: 'Poppins', sans-serif;
 }
 
 .card-date-added {
@@ -133,10 +137,11 @@ h4 {
 .form {
   width: 600px;
   margin: 50px auto;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 20px;
   padding: 30px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(145deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 input {
@@ -147,6 +152,7 @@ input {
   padding: 10px;
   font-size: 16px;
   border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 label {
@@ -167,12 +173,13 @@ button {
   font-size: 16px;
   border-radius: 30px;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out, transform 0.2s;
+  transition: background-color 0.3s ease-in-out, transform 0.2s, box-shadow 0.2s;
 }
 
 button:hover {
   background-color: #454cde;
   transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(93, 112, 240, 0.4);
 }
 
 .error {
@@ -181,6 +188,7 @@ button:hover {
   color: white;
   padding: 10px;
   border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .form-input {
