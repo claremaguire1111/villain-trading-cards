@@ -1,195 +1,188 @@
+/* General Styles */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0px auto;
-  background-color: #c5cade;
+  background-color: #eff3f7;
+  color: #3c3c3c;
 }
 
+/* Header Styles */
 .header {
-  vertical-align:middle;
+  vertical-align: middle;
   height: auto;
   margin: 0px auto;
   padding: 20px 10px;
-  background-color:#8f99b5;
+  background-color: #1d1f33;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-right a {
-    float: left;
-    color: #3b3b3b;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    background-color: #c5cade;
-    font-family: 'Montserrat';
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-top: 20px;
+  color: #f5f5f5;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 25px;
+  background-color: #5f67ea;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 30px;
+  margin-right: 20px;
+  transition: background-color 0.3s;
+}
+
+.header-right a:hover {
+  background-color: #454cde;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .header img {
-  max-width: 600px;
-  margin-left: 20px;
+  max-width: 150px;
 }
-
-
-.header-right a:hover {
-  background-color:#fff;
-}
-
 
 .header a.logo {
   font-size: 25px;
-  font-weight: bold;
-  font-family: "Montserrat";
-}
-
-.header-right {
-  float: right;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  color: #f5f5f5;
 }
 
 .header-right a.active {
-  background-color: dodgerblue;
+  background-color: #f75854;
   color: white;
 }
 
+/* Card Section */
 .content {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2em;
+  justify-content: center;
 }
 
 .card {
   width: 350px;
-  background-color: #f4ede1;
-  margin: 5px auto 20px auto;
-  box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.17);
-  padding-bottom: 1em;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
 }
 
 .card-image {
-  width:300px;
-  height:auto;
-  border-radius:10%;
-  margin: 5px 25px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px 20px 0 0;
 }
 
 .card-name {
-    width: 94.5%;
-    color: #fff;
-    background-color: #3b3b3b;
-    padding: 10px;
-    margin-top: 0;
-    font-family: 'Montserrat';
-    text-transform: uppercase;
-    text-align: CENTER;
-    font-size: 20px;
-}
-
-h2 {
-   color: #fff;
-    background-color: #3b3b3b;
-    padding: 10px;
-    margin-top: 0;
-    font-family: 'Montserrat';
-    text-transform: uppercase;
-    text-align: CENTER;
-    font-size: 20px;
-    width: 100%
+  color: #fff;
+  background-color: #3b3b3b;
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 22px;
+  border-radius: 0 0 20px 20px;
 }
 
 .card-body {
-  width:90%;
-  margin: 5px auto auto;
-}
-
-.card-date-added {
-    margin: 16px 10px;
-    font-size: x-small;
-    font-weight: 300;
-    color: #999;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .card-description {
-    margin: 20px 10px;
-    font-size: medium;
-    font-weight: bold;
-    font-family: 'Montserrat';
-    color: #3b3b3b;
+  margin: 15px 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #555;
 }
 
 .card-interests {
-    margin: 10px;
-    font-size: smaller;
-    color: #3b3b3b;
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3b3b3b;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-date-added {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #a3a3a3;
 }
 
 h4 {
-    margin: 10px;
-    font-size: medium;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: 'Montserrat';
-    font-weight: bold;
-    color: #3b3b3b;
+  margin: 15px 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #3b3b3b;
 }
 
+/* Form Styles */
 .form {
-    width: 600px;
-    margin: auto;
-    background-color: #f4ede1;
-    padding: 0 20px 20px 0;
-        padding-top: 0px;
-        padding-right: 20px;
-        padding-bottom: 20px;
-        padding-left: 0px;
+  width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 input {
-    width: 100%;
-    margin-bottom: 1.25em;
-    height: 2.5em;
-    border: none;
-    margin-top: 5px;
+  width: 100%;
+  margin-bottom: 1.25em;
+  height: 2.5em;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
 }
 
 label {
-    font-family: "Montserrat";
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #3b3b3b;
-    font-size: medium;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #3b3b3b;
+  font-size: 14px;
 }
 
 button {
-    background-color: #8f99b5;
-    border: none;
-    padding: 10px 20px;
-    font-weight: bold;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 16px;
-    margin-left: 20px;
-    font-family: "Montserrat";
+  background-color: #5f67ea;
+  border: none;
+  padding: 15px 30px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
 }
 
 button:hover {
-   background-color: #3b3b3b;
-   color: #fff; 
-}
-
-.form-input {
-    margin-left: 20px;
+  background-color: #454cde;
+  transform: scale(1.05);
 }
 
 .error {
   margin: 10px;
-  background: red;
+  background-color: #f75854;
   color: white;
   padding: 10px;
+  border-radius: 10px;
+}
+
+.form-input {
+  margin-left: 20px;
 }
